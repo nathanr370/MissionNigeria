@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Press Start 2P", monospace;
+  background-image: url("./assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #172033;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.game-card {
+  width: 1150px;
+  max-width: 100%;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 24px;
+  box-shadow: none;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #172033;
+  text-shadow: 2px 2px 0 #f8e2b0;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 18px;
+  color: #172033;
+  font-size: 11px;
+  line-height: 1.8;
+  text-shadow: 1px 1px 0 #f8e2b0;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.stat-box {
+  background: #f3f6fb;
+  border: 3px solid #172033;
+  border-radius: 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 9px;
+  line-height: 1.6;
+  box-shadow: 4px 4px 0 #172033;
+}
+
+.stat-label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  background: #dce7f2;
+  border: 3px solid #172033;
+  border-radius: 12px;
+}
+
+.message {
+  margin-top: 14px;
+  min-height: 48px;
+  padding: 12px;
+  background: #f8f3df;
+  border-left: 5px solid #d6a900;
+  border-radius: 8px;
+  font-size: 10px;
+  line-height: 1.8;
+}
+
+.controls {
+  margin-top: 10px;
+  color: #5c667a;
+  font-size: 9px;
+  line-height: 1.8;
+}
+
+.music-button {
+  padding: 10px 14px;
+  font-family: "Press Start 2P", monospace;
+  font-size: 9px;
+  background: #f8f3df;
+  border: 3px solid #172033;
+  border-radius: 0;
+  box-shadow: 4px 4px 0 #172033;
+  cursor: pointer;
+}
+
+.music-button:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+.music-button:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+.top-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.game-layout {
+  display: flex;
+  align-items: stretch;
+  gap: 18px;
+}
+
+.instructions-box {
+  width: 220px;
+  min-height: 560px;
+  padding: 12px;
+  background: #f8f3df;
+  border-left: 5px solid #d6a900;
+  border-radius: 8px;
+  font-size: 10px;
+  line-height: 1.8;
+}
+
+.canvas-wrapper {
+  flex: 1;
+  min-width: 0;
+}
+
+.top-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+.item-info-panel {
+  margin-bottom: 16px;
+  padding: 14px;
+  background: #f8f3df;
+  border: 3px solid #172033;
+  box-shadow: 4px 4px 0 #172033;
+  font-size: 8px;
+  line-height: 1.7;
+}
+
+.item-info-panel h2 {
+  margin: 0 0 12px 0;
+  font-size: 12px;
+  text-align: center;
+}
+
+.item-info-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.item-info-table th,
+.item-info-table td {
+  border: 2px solid #172033;
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.item-info-table th {
+  background: #f1d58a;
+}

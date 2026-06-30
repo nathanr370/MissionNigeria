@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>MISSION NIGERIA</title>
+
+  <link rel="icon" href="data:," />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="page">
+    <section class="game-card">
+      <h1>MISSION NIGERIA</h1>
+
+      <p class="subtitle">
+        Build trust, transportation, and internet access to strengthen Nigeria's HPV vaccination campaign.
+      </p>
+
+      <div id="stats" class="stats"></div>
+
+      <div class="top-buttons">
+        <button id="musicButton" class="music-button">Music: Off</button>
+        <button id="itemInfoButton" class="music-button">Item Info</button>
+      </div>
+
+      <div id="itemInfoPanel" class="item-info-panel hidden">
+        <h2>Collectible Stats</h2>
+
+        <table class="item-info-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Effect</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>💉 Vaccine Supply</td>
+              <td>Coverage +8</td>
+            </tr>
+
+            <tr>
+              <td>🏫 School Campaign</td>
+              <td>Coverage +6, Transportation +7</td>
+            </tr>
+
+            <tr>
+              <td>🧑‍⚕️ Community Health Worker</td>
+              <td>Trust +8, Internet Access +6, Misinformation -4</td>
+            </tr>
+
+            <tr>
+              <td>📣 Public Education</td>
+              <td>Trust +6, Misinformation -8</td>
+            </tr>
+
+            <tr>
+              <td>🚐 Mobile Clinic</td>
+              <td>Coverage +4, Transportation +9</td>
+            </tr>
+
+            <tr>
+              <td>📱 Internet Access</td>
+              <td>Coverage +3, Internet Access +10</td>
+            </tr>
+
+            <tr>
+              <td>🤝 Trusted Local Leader</td>
+              <td>Trust +10, Misinformation -6</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="game-layout">
+        <div class="instructions-box">
+        <p>You are a community health worker in Nigeria!</p>
+
+        <p>
+            Use WASD to move around and collect items to boost HPV vaccination coverage.
+        </p>
+
+        <p>
+            Click on the "Item Info" button for more information on collectible stats, and make sure to turn music on!
+        </p>
+
+        <p>
+            Visit the Hospital 
+        </p>
+        </div>
+
+        <div class="canvas-wrapper">
+          <canvas id="gameCanvas"></canvas>
+        </div>
+      </div>
+
+      <div id="message" class="message">
+        Collected item info will be updated here!
+      </div>
+
+      <audio id="backgroundMusic" src="./assets/music.mp3" loop></audio>
+      <audio id="itemCollectSound" src="./assets/itemCollect.mp3"></audio>
+    </section>
+  </main>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
